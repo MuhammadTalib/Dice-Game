@@ -1,0 +1,55 @@
+<!Doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dice Game</title>
+    <link rel='shortcut icon' href="dice.jpg">
+    <link rel='stylesheet' href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="font-awesome.min.css" </head> </head> <body>
+
+    <div id='player'>
+        <div id="player-0">
+            <div class='active'>
+                <div id='player_name_0'>Player-0</div>
+                <i id='activeness-0' class="fas fa-circle"></i>
+
+                <div id='player-0-score'>0</div>
+                <div id='current-box-0'>
+                    <div class='current'>Current</div>
+                    <div class='curr-score-0'>0</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="player-1">
+            <div id='player_name_1'>Player-1</div>
+            <i id='activeness-1' class="fas fa-circle"></i>
+            <div id='player-1-score'>0</div>
+            <div id='current-box-1'>
+                <div class='current'>Current</div>
+                <div class='curr-score-1'>0</div>
+            </div>
+        </div>
+
+        <button id='new-game'><i class="ion-ios-plus-outline"></i>New Game</button>
+        <button id='roll-dice'><i class="ion-ios-loop"></i>Roll Dice</button>
+        <button id='hold'><i class="ion-ios-download-outline"></i>Hold</button>
+        <input type='text' placeholder="Winning Range" id='winning-range' onchange="rangechanged(this.value)">
+        <img src="dice-1.png" id='dice-0'>
+        <img src="dice-2.png" id='dice-1'>
+    </div>
+
+    <script src="script.js"></script>
+
+    </body>
+
+</html>
